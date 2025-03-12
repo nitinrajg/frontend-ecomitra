@@ -34,7 +34,7 @@ const Header = () => {
 
       {/* Desktop Navigation */}
       <nav className="hidden lg:flex space-x-8">
-        {["HOME", "SERVICES", "BLOGS", "ABOUT US"].map((item) => (
+        {["HOME", "SERVICES", "BLOGS"].map((item) => (
           <a
             key={item}
             href={`#${item.toLowerCase().replace(" ", "-")}`}
@@ -43,6 +43,12 @@ const Header = () => {
             {item}
           </a>
         ))}
+        <a
+          href="/about-us"
+          className="text-sm font-normal px-6 py-2 rounded-full transition-all border-2 border-transparent hover:border-[#26B33B] hover:bg-transparent hover:text-[#26B33B]"
+        >
+          ABOUT US
+        </a>
       </nav>
 
       {/* Mobile Menu Button */}
@@ -69,7 +75,7 @@ const Header = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="absolute top-16 left-0 w-full bg-[#111111]/80 backdrop-blur-md flex flex-col items-center space-y-6 py-6 lg:hidden">
-          {["HOME", "SERVICES", "BLOGS", "ABOUT US"].map((item) => (
+          {["HOME", "SERVICES", "BLOGS"].map((item) => (
             <a
               key={item}
               href={`#${item.toLowerCase().replace(" ", "-")}`}
@@ -79,6 +85,13 @@ const Header = () => {
               {item}
             </a>
           ))}
+          <a
+            href="/about-us"
+            className="text-sm font-normal px-6 py-2 transition-all border-b border-transparent hover:border-[#26B33B] hover:text-[#26B33B]"
+            onClick={() => setIsOpen(false)}
+          >
+            ABOUT US
+          </a>
         </div>
       )}
     </header>
