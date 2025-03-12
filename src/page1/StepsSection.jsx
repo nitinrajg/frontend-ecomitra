@@ -17,7 +17,7 @@ const StepsSection = () => {
               <span className="block h-[1px] bg-white w-full mt-3"></span>
             </h2>
           </div>
-          <p className="text-gray-300 mt-4 text-base">
+          <p className="text-gray-300 mt-4 text-base font-[Poppins]">
             Ecomitra’s Sell Your Scrap service makes recycling easy and
             sustainable. By connecting individuals and businesses with scrap
             merchants, we ensure that waste is repurposed, not wasted. This
@@ -25,7 +25,7 @@ const StepsSection = () => {
             circular economy. Sell your scrap today, and be part of a cleaner,
             greener future!
           </p>
-          <p className="text-[#26B33B] mt-2 text-base font-medium">
+          <p className="text-[#26B33B] mt-2 text-base font-medium font-[Poppins]">
             Ecomitra simplifies scrap selling with convenience and transparency,
             empowering individuals to turn waste into value while promoting
             sustainability.

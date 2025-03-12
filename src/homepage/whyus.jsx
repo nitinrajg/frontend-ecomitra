@@ -29,7 +29,7 @@ const WhyChooseUs = () => {
         </h2>
 
         <motion.div
-          className="absolute top-6 left-16 w-56 h-56 flex flex-col items-center justify-center rounded-full bg-gradient-to-r from-green-600 to-green-400 shadow-[0_0_50px_rgba(34,197,94,0.8)]"
+          className="absolute top-6 left-16 w-56 h-56 flex flex-col items-center justify-center rounded-full bg-gradient-to-r from-green-600 to-green-700 shadow-[0_0_50px_rgba(34,197,94,0.8)]"
           variants={blobVariants}
           animate="float"
         >
@@ -40,7 +40,7 @@ const WhyChooseUs = () => {
         </motion.div>
 
         <motion.div
-          className="absolute top-24 right-8 w-64 h-64 flex flex-col items-center justify-center rounded-full bg-gradient-to-r from-green-600 to-green-400 shadow-[0_0_50px_rgba(34,197,94,0.8)]"
+          className="absolute top-24 right-8 w-64 h-64 flex flex-col items-center justify-center rounded-full bg-gradient-to-r from-green-600 to-green-700 shadow-[0_0_50px_rgba(34,197,94,0.8)]"
           variants={blobVariants}
           animate="float"
         >
@@ -49,7 +49,7 @@ const WhyChooseUs = () => {
         </motion.div>
 
         <motion.div
-          className="absolute bottom-8 left-32 w-60 h-60 flex flex-col items-center justify-center rounded-full bg-gradient-to-r from-green-600 to-green-400 shadow-[0_0_50px_rgba(34,197,94,0.8)]"
+          className="absolute bottom-8 left-32 w-60 h-60 flex flex-col items-center justify-center rounded-full bg-gradient-to-r from-green-600 to-green-700 shadow-[0_0_50px_rgba(34,197,94,0.8)]"
           variants={blobVariants}
           animate="float"
         >
@@ -58,7 +58,7 @@ const WhyChooseUs = () => {
         </motion.div>
 
         <motion.div
-          className="absolute bottom-20 right-24 w-52 h-52 flex flex-col items-center justify-center rounded-full bg-gradient-to-r from-green-600 to-green-400 shadow-[0_0_50px_rgba(34,197,94,0.8)]"
+          className="absolute bottom-20 right-24 w-52 h-52 flex flex-col items-center justify-center rounded-full bg-gradient-to-r from-green-600 to-green-700 shadow-[0_0_50px_rgba(34,197,94,0.8)]"
           variants={blobVariants}
           animate="float"
         >

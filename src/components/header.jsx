@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import logo from "../assets/logonew.png";
 
 const Header = () => {
@@ -23,7 +23,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full bg-transparent text-white py-5 px-6 lg:px-16 flex justify-between items-center z-50 backdrop-blur-md transition-transform ${
+      className={`fixed top-0 left-0 w-full bg-transparent text-white py-5 px-6 lg:px-16 flex justify-between items-center z-50 transition-transform ${
         isScrolled ? "-translate-y-full" : ""
       }`}
     >

@@ -15,7 +15,7 @@ const SellYourScrap = () => {
           From Trash To Cash, <br />
           <span className="text-[#26B33B]">Sell Your Scrap</span>
         </h1>
-        <p className="text-gray-200 mt-4 text-lg px-4">
+        <p className="text-gray-200 mt-4 text-lg px-4 font-[Poppins]">
           "Turn your trash into cash with Ecomitra! Our hassle-free platform
           connects you with trusted scrap merchants, ensuring fair prices and
           eco-friendly disposal. Whether you are a group or an individual,
@@ -24,11 +24,11 @@ const SellYourScrap = () => {
         </p>
       </div>
 
-      <div className="relative z-10 flex justify-center mt-32 -mb-[50%]">
+      <div className="relative z-10 flex justify-center mt-20 -mb-[50%]">
         <img
           src={stepsImage}
           alt="Sell Your Scrap Steps"
-          className="w-[92%] max-w-5xl"
+          className="w-[92%] max-w-4xl"
         />
       </div>
     </section>

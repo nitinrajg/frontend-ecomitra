@@ -1,4 +1,5 @@
 import { FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import footerLogo from "../assets/footer_logo.png";
 
 const Footer = () => {
@@ -29,28 +30,28 @@ const Footer = () => {
             <h4 className="text-[#26B33B] font-bold mb-3">BUSINESS</h4>
             <ul className="space-y-2">
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/scrap-selling"
                   className="border-b border-white/40 hover:border-[#26B33B] transition duration-300"
                 >
                   Scrap Selling
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/eco-kind"
                   className="border-b border-white/40 hover:border-[#26B33B] transition duration-300"
                 >
                   Eco Kind
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/business"
                   className="border-b border-white/40 hover:border-[#26B33B] transition duration-300"
                 >
                   Business
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -59,28 +60,28 @@ const Footer = () => {
             <h4 className="text-[#26B33B] font-bold mb-3">COMPANY</h4>
             <ul className="space-y-2">
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/AboutUs"
                   className="border-b border-white/40 hover:border-[#26B33B] transition duration-300"
                 >
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/blogs"
                   className="border-b border-white/40 hover:border-[#26B33B] transition duration-300"
                 >
                   Blogs
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/pre-registration"
                   className="border-b border-white/40 hover:border-[#26B33B] transition duration-300"
                 >
                   Collaboration
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -89,28 +90,28 @@ const Footer = () => {
             <h4 className="text-[#26B33B] font-bold mb-3">HELP</h4>
             <ul className="space-y-2">
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/contact"
                   className="border-b border-white/40 hover:border-[#26B33B] transition duration-300"
                 >
                   Contact Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/privacy-policy"
                   className="border-b border-white/40 hover:border-[#26B33B] transition duration-300"
                 >
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/terms"
                   className="border-b border-white/40 hover:border-[#26B33B] transition duration-300"
                 >
                   Terms & Conditions
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

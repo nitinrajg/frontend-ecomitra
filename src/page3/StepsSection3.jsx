@@ -1,7 +1,7 @@
 import clover from "../assets/clover.png";
-import step1 from "../assets/p1step1.png";
-import step2 from "../assets/p1step2.png";
-import step3 from "../assets/p1step3.png";
+import step1 from "../assets/estep 1.png";
+import step2 from "../assets/estep 2.png";
+import step3 from "../assets/estep 3.png";
 import step4 from "../assets/p1step4.png";
 
 const StepsSection3 = () => {
@@ -13,22 +13,15 @@ const StepsSection3 = () => {
           <h2 className="text-3xl mt-10 md:text-4xl font-bold">Ecomitra’s</h2>
           <div className="mt-2">
             <h2 className="text-[#26B33B] text-3xl md:text-4xl font-bold relative inline-block">
-              Sell Your Scrap
+            Ecokind
               <span className="block h-[1px] bg-white w-full mt-3"></span>
             </h2>
           </div>
-          <p className="text-gray-300 mt-4 text-base">
-            Ecomitra’s Sell Your Scrap service makes recycling easy and
-            sustainable. By connecting individuals and businesses with scrap
-            merchants, we ensure that waste is repurposed, not wasted. This
-            reduces landfill waste, conserves resources, and helps build a
-            circular economy. Sell your scrap today, and be part of a cleaner,
-            greener future!
+          <p className="text-gray-300 mt-4 text-base font-[Poppins]">
+            Ecomitra’s EcoKind service is dedicated to making a positive impact on both people and the planet. Through EcoKind, we facilitate donations to orphans and those in need, fostering a sustainable model of social responsibility. By supporting vulnerable communities, we reduce inequality and promote social sustainability, while also encouraging the reuse and repurposing of resources. EcoKind is about giving back, not just through charity, but by creating a more equitable and sustainable world for future generations.
           </p>
-          <p className="text-[#26B33B] mt-2 text-base font-medium">
-            Ecomitra simplifies scrap selling with convenience and transparency,
-            empowering individuals to turn waste into value while promoting
-            sustainability.
+          <p className="text-[#26B33B] mt-2 text-base font-medium font-[Poppins]">
+          With EcoKind, your donations don’t just help others—they promote sustainability and compassion, ensuring that every item you donate goes toward making a difference.
           </p>
         </div>
 
@@ -37,7 +30,7 @@ const StepsSection3 = () => {
           <img
             src={clover}
             alt="Clover"
-            className="w-50 h-50 rounded-full bg-[#A7E85A] p-4"
+            className="w-50 h-50 rounded-full bg-[#A7E85A] p-0"
           />
         </div>
       </div>
@@ -49,15 +42,11 @@ const StepsSection3 = () => {
           <div className="flex-1">
             <h3 className="text-[#26B33B] text-2xl font-bold">STEP 1</h3>
             <p className="text-gray-300 font-semibold text-base">
-              LIST YOUR SCRAP
+            LIST YOUR DONATIONS
             </p>
             <div className="border-b border-[#26B33B] w-20 my-2"></div>
-            <p className="text-gray-300 text-base">
-              Start by listing the scrap you want to sell on our platform.
-              Whether it’s metal, paper, plastic, or e-waste, simply upload the
-              details and quantities of your scrap along with clear pictures.
-              This helps us connect you with the right buyers, ensuring
-              transparency and fair pricing.
+            <p className="text-gray-300 mt-2  font-[Poppins]">
+            The first step in making a meaningful impact is to list the items you wish to donate. Whether it’s clothes, books, toys, electronics, or other essentials, simply upload the details on our platform. By listing your donations, you ensure that your items reach those who need them most—orphans, underprivileged communities, and vulnerable individuals.
             </p>
           </div>
           <div className="flex-1">
@@ -70,14 +59,13 @@ const StepsSection3 = () => {
           <div className="flex-1">
             <h3 className="text-[#26B33B] text-2xl font-bold">STEP 2</h3>
             <p className="text-gray-300 font-semibold text-base">
-              SCHEDULE PICKUP
+            QUALITY CHECK
             </p>
             <div className="border-b border-[#26B33B] w-20 my-2"></div>
-            <p className="text-gray-300 text-base">
-              Choose a convenient time for your scrap collection. Our platform
-              allows you to pick a date and time that fits your schedule,
-              ensuring a hassle-free experience without interrupting your daily
-              routine.
+            <p className="text-gray-300 text-base font-[Poppins]">
+            Once your donations are listed, Ecomitra conducts a quality check to assess
+their condition and ensure they are suitable for reuse or redistribution. This step ensures that only items in good condition are passed on, helping provide tangible support to those in need. If the items cannot be directly used, they will
+be responsibly recycled to maximize value for charity.
             </p>
           </div>
           <div className="flex-1">
@@ -93,11 +81,8 @@ const StepsSection3 = () => {
               CONNECT WITH PICKUP PARTNER
             </p>
             <div className="border-b border-[#26B33B] w-20 my-2"></div>
-            <p className="text-gray-300 text-base">
-              Once you schedule a pickup, Ecomitra assigns a trusted and
-              verified pickup partner from our network. You’ll receive real-time
-              updates about your partner’s details and estimated arrival time,
-              ensuring a seamless and reliable process.
+            <p className="text-gray-300 text-base font-[Poppins]">
+            After the quality check, a verified and trusted pickup partner is assigned to collect your donations. You’ll receive real-time updates about your pickup partner’s details and an estimated time of arrival. This ensures a smooth and hassle-free donation process, with your items being efficiently delivered to those who need them.
             </p>
           </div>
           <div className="flex-1">
