@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Video from "../assets/videos/iphone.mp4";
 
 const AppLaunch = () => {
@@ -14,9 +15,9 @@ const AppLaunch = () => {
             Stay ahead and be the first to experience innovation. Join us on our
             journey.
           </p>
-          <button className="mt-5 px-6 py-2 border-2 border-green-500 bg-green-500 text-white rounded-full hover:bg-transparent hover:text-green-500 transition w-fit text-sm lg:text-base">
+          <Link to="/pre-registration" className="mt-5 px-6 py-2 border-2 border-green-500 bg-green-500 text-white rounded-full hover:bg-transparent hover:text-green-500 transition w-fit text-sm lg:text-base">
             GET NOTIFIED
-          </button>
+          </Link>
         </div>
 
         {/* Right Side - Mockup Placeholder */}
