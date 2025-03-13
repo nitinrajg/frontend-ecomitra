@@ -2,7 +2,6 @@ import clover from "../assets/clover.png";
 import step1 from "../assets/estep 1.png";
 import step2 from "../assets/estep 2.png";
 import step3 from "../assets/estep 3.png";
-import step4 from "../assets/p1step4.png";
 
 const StepsSection3 = () => {
   return (
@@ -87,26 +86,6 @@ be responsibly recycled to maximize value for charity.
           </div>
           <div className="flex-1">
             <img src={step3} alt="Step 3" className="rounded-xl w-full" />
-          </div>
-        </div>
-
-        {/* Step 4 */}
-        <div className="flex flex-col md:flex-row-reverse items-center md:items-start gap-8">
-          <div className="flex-1">
-            <h3 className="text-[#26B33B] text-2xl font-bold">STEP 4</h3>
-            <p className="text-gray-300 font-semibold text-base">
-              GET PAID INSTANTLY
-            </p>
-            <div className="border-b border-[#26B33B] w-20 my-2"></div>
-            <p className="text-gray-300 text-base">
-              When the pickup partner arrives, your scrap is collected, and you
-              get paid instantly based on the agreed price. With Ecomitra,
-              selling your scrap is efficient, transparent, and environmentally
-              responsible, contributing to a cleaner and greener world.
-            </p>
-          </div>
-          <div className="flex-1">
-            <img src={step4} alt="Step 4" className="rounded-xl w-full" />
           </div>
         </div>
       </div>

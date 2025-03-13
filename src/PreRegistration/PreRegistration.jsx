@@ -55,22 +55,22 @@ const PreRegistration = () => {
   return (
     <>
       <PreRegistrationHeader />
-      <div className="flex min-h-screen font-poppins bg-transparent">
-        {/* Left Side: Branding Section */}
+      <div className="flex flex-col md:flex-row min-h-screen font-poppins bg-transparent overflow-x-hidden">
+        {/* Left Side: Branding Section - Hidden on mobile/tablet */}
         <div
-          className="w-1/3 relative flex flex-col items-center justify-center text-white bg-cover bg-center brightness-125"
+          className="hidden md:flex w-full md:w-1/3 relative flex-col items-center justify-center text-white bg-cover bg-center brightness-125 overflow-x-hidden"
           style={{ backgroundImage: `url(${PartnerBg})` }}
         >
-          <h1 className="text-5xl font-bold text-center">Partner with Us.</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-center px-4">Partner with Us.</h1>
 
-          <div className="absolute bottom-10 right-10 space-y-4 text-lg text-right">
-            <p className="flex items-center gap-2">
+          <div className="absolute bottom-10 right-10 space-y-4 text-base md:text-lg text-right max-w-full px-4">
+            <p className="flex items-center gap-2 justify-end flex-wrap">
               <FaEnvelope className="text-xl" /> ecomitrasolutions07@gmail.com
             </p>
-            <p className="flex items-center gap-2">
+            <p className="flex items-center gap-2 justify-end">
               <FaPhone className="text-xl" /> 79999 01514
             </p>
-            <p className="flex items-center gap-2">
+            <p className="flex items-center gap-2 justify-end">
               <FaPhone className="text-xl" /> 96767 13970
             </p>
 
@@ -84,8 +84,7 @@ const PreRegistration = () => {
         </div>
 
         {/* Right Side: Embedded Form */}
-        <div className="w-2/3 p-10">
-          <h2 className="text-2xl font-semibold mb-6">Pre Registration</h2>
+        <div className="w-full md:w-2/3 p-4 md:p-10 overflow-x-hidden">
           <iframe
             src="https://app.nocodb.com/#/nc/form/c52d86be-dbeb-4ba6-8bf3-5c79cbbc42ec"
             width="100%"

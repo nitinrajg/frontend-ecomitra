@@ -1,8 +1,8 @@
-import clover from "../assets/clover.png";
 import step1 from "../assets/bstep 1.png";
 import step2 from "../assets/bstep 2.png";
 import step3 from "../assets/bstep 3.png";
 import step4 from "../assets/bstep 4.png";
+import clover from "../assets/clover.png";
 
 const StepsSection2 = () => {
   return (

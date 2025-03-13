@@ -1,5 +1,5 @@
 import React from "react";
-import Video from "../assets/videos/iphone.mp4"
+import Video from "../assets/videos/iphone.mp4";
 
 const AppLaunch = () => {
   return (
@@ -20,15 +20,15 @@ const AppLaunch = () => {
         </div>
 
         {/* Right Side - Mockup Placeholder */}
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center -mt-[5px]">
           <div className="w-72 h-[500px] lg:w-96 lg:h-[600px] bg-black/50 rounded-lg flex items-center justify-center">
           <video
-              src={Video}  
+              src={Video}
               autoPlay
               loop
               muted
               className="w-full h-full object-cover"
-            ></video>
+              ></video>
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import { Route, BrowserRouter as Router, Routes, useLocation } from "react-router-dom";
-import Footer from "./components/Footer";
+import Footer from "./components/footer";
 import Header from "./components/header";
+import AboutUs from "./components/AboutUs";
 import AppLaunch from "./homepage/applaunch";
 import HeroSection from "./homepage/hero";
 import Merchants from "./homepage/Merchants";
@@ -38,6 +39,7 @@ const AppContent = () => {
         <Route path="/business" element={<Page2Header />} />
         <Route path="/eco-life" element={<Page3Header />} />
         <Route path="/pre-registration" element={<PreRegistration />} />
+        <Route path="/about-us" element={<AboutUs />} />
       </Routes>
       <Footer />
     </div>

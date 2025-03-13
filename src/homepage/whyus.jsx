@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
+import convenientIcon from "../assets/convenient.png";
 import flexibleIcon from "../assets/flexible.png";
 import sustainableIcon from "../assets/sustainable.png";
-import convenientIcon from "../assets/convenient.png";
 import userFriendlyIcon from "../assets/user-friendly.png";
 
 const blobVariants = {

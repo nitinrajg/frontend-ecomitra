@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import logo from "../assets/logonew.png";
 
 const Header = () => {
@@ -28,27 +29,35 @@ const Header = () => {
       }`}
     >
       {/* Logo */}
-      <a href="/" className="transform transition-transform hover:rotate-12">
+      <Link to="/" className="transform transition-transform hover:rotate-12">
         <img src={logo} alt="Logo" className="w-8 h-12" />
-      </a>
+      </Link>
 
       {/* Desktop Navigation */}
       <nav className="hidden lg:flex space-x-8">
         {["HOME", "SERVICES", "BLOGS"].map((item) => (
-          <a
+          <Link
             key={item}
-            href={`#${item.toLowerCase().replace(" ", "-")}`}
+            to={item === "HOME" ? "/" : item === "SERVICES" ? "/" : `/${item.toLowerCase().replace(" ", "-")}`}
             className="text-sm font-normal px-6 py-2 rounded-full transition-all border-2 border-transparent hover:border-[#26B33B] hover:bg-transparent hover:text-[#26B33B]"
+            onClick={() => {
+              if (item === "SERVICES") {
+                const servicesSection = document.getElementById("services");
+                if (servicesSection) {
+                  servicesSection.scrollIntoView({ behavior: "smooth" });
+                }
+              }
+            }}
           >
             {item}
-          </a>
+          </Link>
         ))}
-        <a
-          href="/about-us"
+        <Link
+          to="/about-us"
           className="text-sm font-normal px-6 py-2 rounded-full transition-all border-2 border-transparent hover:border-[#26B33B] hover:bg-transparent hover:text-[#26B33B]"
         >
           ABOUT US
-        </a>
+        </Link>
       </nav>
 
       {/* Mobile Menu Button */}
@@ -57,7 +66,7 @@ const Header = () => {
         onClick={() => setIsOpen(!isOpen)}
       >
         <svg
-          className="w-8 h-8 text-white"
+          className="w-8 h-8 text-[#26B33B]"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -74,24 +83,24 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="absolute top-16 left-0 w-full bg-[#111111]/80 backdrop-blur-md flex flex-col items-center space-y-6 py-6 lg:hidden">
+        <div className="fixed top-16 left-0 w-full bg-[#111111]/80 backdrop-blur-md flex flex-col items-center space-y-6 py-6 lg:hidden">
           {["HOME", "SERVICES", "BLOGS"].map((item) => (
-            <a
+            <Link
               key={item}
-              href={`#${item.toLowerCase().replace(" ", "-")}`}
-              className="text-sm font-normal px-6 py-2 transition-all border-b border-transparent hover:border-[#26B33B] hover:text-[#26B33B]"
+              to={item === "HOME" ? "/" : item === "SERVICES" ? "/#services" : `/${item.toLowerCase().replace(" ", "-")}`}
+              className="text-sm font-normal w-full text-center px-4 py-2 transition-all border-b border-transparent hover:border-[#26B33B] hover:text-[#26B33B]"
               onClick={() => setIsOpen(false)}
             >
               {item}
-            </a>
+            </Link>
           ))}
-          <a
-            href="/about-us"
-            className="text-sm font-normal px-6 py-2 transition-all border-b border-transparent hover:border-[#26B33B] hover:text-[#26B33B]"
+          <Link
+            to="/about-us"
+            className="text-sm font-normal w-full text-center px-4 py-2 transition-all border-b border-transparent hover:border-[#26B33B] hover:text-[#26B33B]"
             onClick={() => setIsOpen(false)}
           >
             ABOUT US
-          </a>
+          </Link>
         </div>
       )}
     </header>
