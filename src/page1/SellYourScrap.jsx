@@ -10,7 +10,8 @@ const SellYourScrap = () => {
         style={{ backgroundImage: `url(${sellYourScrap})` }}
       ></div>
 
-      <div className="relative z-10 text-center max-w-3xl pt-72 md:pt-64">
+      {/* Text Content */}
+      <div className="relative z-10 text-center max-w-3xl pt-64 md:pt-56 lg:pt-72">
         <h1 className="text-4xl md:text-6xl font-bold leading-tight">
           From Trash To Cash, <br />
           <span className="text-[#26B33B]">Sell Your Scrap</span>
@@ -24,13 +25,17 @@ const SellYourScrap = () => {
         </p>
       </div>
 
-      <div className="relative z-10 flex justify-center mt-20 -mb-[50%]">
-        <img
-          src={stepsImage}
-          alt="Sell Your Scrap Steps"
-          className="w-[92%] max-w-4xl"
-        />
-      </div>
+      {/* Steps Image */}
+      <div className="relative z-10 flex justify-center w-full mt-20">
+        <div className="w-full max-w-6xl px-4 md:px-8 transform translate-y-1/4">
+          <img
+            src={stepsImage}
+            alt="Sell Your Scrap Steps"
+            className="w-full h-auto object-contain rounded-lg shadow-lg"
+            loading="lazy"
+          />
+        </div>
+      </div>
     </section>
   );
 };
