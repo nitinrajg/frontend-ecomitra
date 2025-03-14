@@ -1,8 +1,44 @@
+import { motion } from "framer-motion";
 import clover from "../assets/clover.png";
 import step1 from "../assets/p1step1.png";
 import step2 from "../assets/p1step2.png";
 import step3 from "../assets/p1step3.png";
 import step4 from "../assets/p1step4.png";
+
+const steps = [
+  {
+    title: "STEP 1",
+    subtitle: "LIST YOUR SCRAP",
+    description:
+      "Start by listing the scrap you want to sell on our platform. Whether it’s metal, paper, plastic, or e-waste, simply upload the details and quantities of your scrap along with clear pictures. This helps us connect you with the right buyers, ensuring transparency and fair pricing.",
+    image: step1,
+    animation: { x: -100 }, // Slide from left
+  },
+  {
+    title: "STEP 2",
+    subtitle: "SCHEDULE PICKUP",
+    description:
+      "Choose a convenient time for your scrap collection. Our platform allows you to pick a date and time that fits your schedule, ensuring a hassle-free experience without interrupting your daily routine.",
+    image: step2,
+    animation: { x: 100 }, // Slide from right
+  },
+  {
+    title: "STEP 3",
+    subtitle: "CONNECT WITH PICKUP PARTNER",
+    description:
+      "Once you schedule a pickup, Ecomitra assigns a trusted and verified pickup partner from our network. You’ll receive real-time updates about your partner’s details and estimated arrival time, ensuring a seamless and reliable process.",
+    image: step3,
+    animation: { x: -100 }, // Slide from left
+  },
+  {
+    title: "STEP 4",
+    subtitle: "GET PAID INSTANTLY",
+    description:
+      "When the pickup partner arrives, your scrap is collected, and you get paid instantly based on the agreed price. With Ecomitra, selling your scrap is efficient, transparent, and environmentally responsible, contributing to a cleaner and greener world.",
+    image: step4,
+    animation: { x: 100 }, // Slide from right
+  },
+];
 
 const StepsSection = () => {
   return (
@@ -44,86 +80,28 @@ const StepsSection = () => {
 
       {/* Steps Container */}
       <div className="w-full max-w-5xl space-y-16">
-        {/* Step 1 */}
-        <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
-          <div className="flex-1">
-            <h3 className="text-[#26B33B] text-2xl font-bold">STEP 1</h3>
-            <p className="text-gray-300 font-semibold text-base">
-              LIST YOUR SCRAP
-            </p>
-            <div className="border-b border-[#26B33B] w-20 my-2"></div>
-            <p className="text-gray-300 text-base">
-              Start by listing the scrap you want to sell on our platform.
-              Whether it’s metal, paper, plastic, or e-waste, simply upload the
-              details and quantities of your scrap along with clear pictures.
-              This helps us connect you with the right buyers, ensuring
-              transparency and fair pricing.
-            </p>
-          </div>
-          <div className="flex-1">
-            <img src={step1} alt="Step 1" className="rounded-xl w-full" />
-          </div>
-        </div>
-
-        {/* Step 2 */}
-        <div className="flex flex-col md:flex-row-reverse items-center md:items-start gap-8">
-          <div className="flex-1">
-            <h3 className="text-[#26B33B] text-2xl font-bold">STEP 2</h3>
-            <p className="text-gray-300 font-semibold text-base">
-              SCHEDULE PICKUP
-            </p>
-            <div className="border-b border-[#26B33B] w-20 my-2"></div>
-            <p className="text-gray-300 text-base">
-              Choose a convenient time for your scrap collection. Our platform
-              allows you to pick a date and time that fits your schedule,
-              ensuring a hassle-free experience without interrupting your daily
-              routine.
-            </p>
-          </div>
-          <div className="flex-1">
-            <img src={step2} alt="Step 2" className="rounded-xl w-full" />
-          </div>
-        </div>
-
-        {/* Step 3 */}
-        <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
-          <div className="flex-1">
-            <h3 className="text-[#26B33B] text-2xl font-bold">STEP 3</h3>
-            <p className="text-gray-300 font-semibold text-base">
-              CONNECT WITH PICKUP PARTNER
-            </p>
-            <div className="border-b border-[#26B33B] w-20 my-2"></div>
-            <p className="text-gray-300 text-base">
-              Once you schedule a pickup, Ecomitra assigns a trusted and
-              verified pickup partner from our network. You’ll receive real-time
-              updates about your partner’s details and estimated arrival time,
-              ensuring a seamless and reliable process.
-            </p>
-          </div>
-          <div className="flex-1">
-            <img src={step3} alt="Step 3" className="rounded-xl w-full" />
-          </div>
-        </div>
-
-        {/* Step 4 */}
-        <div className="flex flex-col md:flex-row-reverse items-center md:items-start gap-8">
-          <div className="flex-1">
-            <h3 className="text-[#26B33B] text-2xl font-bold">STEP 4</h3>
-            <p className="text-gray-300 font-semibold text-base">
-              GET PAID INSTANTLY
-            </p>
-            <div className="border-b border-[#26B33B] w-20 my-2"></div>
-            <p className="text-gray-300 text-base">
-              When the pickup partner arrives, your scrap is collected, and you
-              get paid instantly based on the agreed price. With Ecomitra,
-              selling your scrap is efficient, transparent, and environmentally
-              responsible, contributing to a cleaner and greener world.
-            </p>
-          </div>
-          <div className="flex-1">
-            <img src={step4} alt="Step 4" className="rounded-xl w-full" />
-          </div>
-        </div>
+        {steps.map((step, index) => (
+          <motion.div
+            key={index}
+            className={`flex flex-col md:flex-row ${
+              index % 2 !== 0 ? "md:flex-row-reverse" : ""
+            } items-center md:items-start gap-8`}
+            initial={{ opacity: 0, ...step.animation }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, delay: index * 0.3, ease: "easeInOut" }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
+            <div className="flex-1 text-center md:text-left">
+              <h3 className="text-[#26B33B] text-2xl font-bold">{step.title}</h3>
+              <p className="text-gray-300 font-semibold text-base">{step.subtitle}</p>
+              <div className="border-b border-[#26B33B] w-20 my-2 mx-auto md:mx-0"></div>
+              <p className="text-gray-300 text-base">{step.description}</p>
+            </div>
+            <div className="flex-1">
+              <img src={step.image} alt={step.subtitle} className="rounded-xl w-full" />
+            </div>
+          </motion.div>
+        ))}
       </div>
     </section>
   );

@@ -1,10 +1,10 @@
 import { Route, BrowserRouter as Router, Routes, useLocation } from "react-router-dom";
+import AboutUs from "./components/AboutUs";
 import Footer from "./components/footer";
 import Header from "./components/header";
-import AboutUs from "./components/AboutUs";
 import AppLaunch from "./homepage/applaunch";
 import HeroSection from "./homepage/hero";
-import Merchants from "./homepage/Merchants";
+import Merchants from "./homepage/merchants";
 import Services from "./homepage/services";
 import WhyChooseUs from "./homepage/whyus";
 import Page1 from "./page1/page1header";
