@@ -76,9 +76,9 @@ const PreRegistration = () => {
 
             {/* Social Media Icons */}
             <div className="mt-4 flex justify-end space-x-6 text-2xl">
-              <a href="#" className="hover:text-gray-300"><FaLinkedin /></a>
-              <a href="#" className="hover:text-gray-300"><FaInstagram /></a>
-              <a href="#" className="hover:text-gray-300"><FaXTwitter /></a>
+              <a href="https://www.instagram.com/ecomitra.in/" className="hover:text-gray-300"><FaLinkedin /></a>
+              <a href="https://www.linkedin.com/company/eco-mitra/?viewAsMember=true" className="hover:text-gray-300"><FaInstagram /></a>
+              <a href="https://x.com/ecomitraind?t=hjh54id3hhc9k7GQTeYXqw" className="hover:text-gray-300"><FaXTwitter /></a>
             </div>
           </div>
         </div>
