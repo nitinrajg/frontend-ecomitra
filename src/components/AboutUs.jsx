@@ -28,7 +28,7 @@ const AboutUs = () => {
         <div className="bg-[#26B33B]/10 p-6 rounded-lg border border-[#26B33B]/20">
           <h3 className="text-[#26B33B] text-2xl font-bold mb-4">Sustainability</h3>
           <p className="text-white/80">
-          EcoMitra is dedicated to promoting sustainable practices by facilitating the recycling and proper disposal of scrap materials. By encouraging the sale and recycling of scrap, EcoMitra significantly reduces waste and minimizes the environmental impact of discarded materials, contributing to a cleaner and greener environment.
+          coMitra is dedicated to promoting sustainable practices by facilitating the recycling and proper disposal of scrap materials. By encouraging the sale and recycling of scrap, EcoMitra significantly reduces waste and minimizes the environmental impact of discarded materials, contributing to a cleaner and greener environment.
 
           </p>
         </div>
@@ -46,8 +46,7 @@ const AboutUs = () => {
         <div className="bg-[#26B33B]/10 p-6 rounded-lg border border-[#26B33B]/20">
           <h3 className="text-[#26B33B] text-2xl font-bold mb-4">Community</h3>
           <p className="text-white/80">
-          EcoMitra actively engages with local communities to raise awareness about the importance of recycling and sustainable practices. The application provides educational resources and outreach programs to empower communities to embrace eco-friendly habits. Additionally, EcoMitra collaborates with various organizations and institutions to develop and implement sustainable solutions for waste management, fostering a sense of community involvement and responsibility.
-          </p>
+          EcoMitra actively engages with local communities to raise awareness about the importance of recycling and sustainable practices. The application provides educational resources and outreach programs to empower communities to embrace eco-friendly habits. Additionally, EcoMitra collaborates with various organizations and institutions to develop and implement sustainable solutions for waste management, fostering a sense of community involvement and responsibility.</p>
         </div>
       </div>
 
