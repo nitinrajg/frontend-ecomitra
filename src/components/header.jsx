@@ -37,7 +37,7 @@ const Header = () => {
     >
       {/* Logo */}
       <Link to="/" className="transform transition-transform hover:rotate-12">
-        <img src={logo} alt="Logo" className="w-8 h-12" />
+        <img src={logo} alt="Logo" className="w-12 h-16" />
       </Link>
 
       {/* Desktop Navigation */}
