@@ -43,7 +43,7 @@ const Blogs = () => {
               <img
                 src={testimonial.image}
                 alt={testimonial.name}
-                className="w-26 h-26 object-cover rounded-full border-4 border-white"
+                className="w-24 h-24 object-cover rounded-full border-4 border-white"
               />
             </div>
 

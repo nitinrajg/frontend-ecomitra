@@ -50,7 +50,7 @@ const Header = () => {
               if (item === "SERVICES") {
                 scrollToSection("services");
               } else if (item === "BLOGS") {
-                scrollToSection("blogs");
+                window.location.href = "/blogs";
               } else {
                 window.location.href = "/";
               }
@@ -100,7 +100,7 @@ const Header = () => {
                 if (item === "SERVICES") {
                   scrollToSection("services");
                 } else if (item === "BLOGS") {
-                  scrollToSection("blogs");
+                  window.location.href = "/blogs";
                 } else {
                   window.location.href = "/";
                 }
