@@ -6,12 +6,12 @@ const EcolifePage = () => {
     <section className="relative bg-[#1C211B] text-white min-h-screen flex flex-col items-center px-6 lg:px-20">
       {/* Background Image */}
       <div
-        className="absolute inset-0 w-full h-full bg-cover bg-center opacity-50"
+        className="absolute inset-0 w-full h-full bg-center bg-cover opacity-50"
         style={{ backgroundImage: `url(${sellYourScrap})` }}
       ></div>
 
-      <div className="relative z-10 text-center max-w-3xl pt-72 md:pt-64">
-        <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+      <div className="relative z-10 pt-72 max-w-3xl text-center md:pt-64">
+        <h1 className="text-4xl font-bold leading-tight md:text-6xl">
           From Trash to Treasure, <br />
           <span className="text-[#26B33B]">Contribute with kindness
           </span>
@@ -24,7 +24,7 @@ can create a brighter future, one act of generosity at a time."
         </p>
       </div>
 
-      <div className="relative z-10 flex justify-center mt-32 -mb-[50%]">
+      <div className="relative z-10 flex justify-center mt-28 -mb-[50%]">
         <img
           src={stepsImage}
           alt="Sell Your Scrap Steps"

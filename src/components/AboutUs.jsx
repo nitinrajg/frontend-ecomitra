@@ -2,17 +2,17 @@ import React from 'react';
 
 const AboutUs = () => {
   return (
-    <div className="min-h-screen py-20 px-4 md:px-8 lg:px-16">
+    <div className="px-4 py-20 min-h-screen md:px-8 lg:px-16">
       {/* Hero Section */}
-      <div className="text-center mb-16">
+      <div className="mb-16 text-center">
         <div className="mb-8">
-          <span className="text-4xl md:text-5xl lg:text-6xl font-bold">
+          <span className="text-4xl font-bold md:text-5xl lg:text-6xl">
             <span className="text-white">"Providing </span>
             <span className="text-[#26B33B]">Connections</span>
             <span className="text-white">, </span>
           </span>
           <div className="mt-4">
-            <span className="text-4xl md:text-5xl lg:text-6xl font-bold">
+            <span className="text-4xl font-bold md:text-5xl lg:text-6xl">
               <span className="text-white">Enabling </span>
               <span className="text-[#26B33B]">Sustainability</span>
               <span className="text-white">.</span>
@@ -23,13 +23,12 @@ const AboutUs = () => {
       </div>
 
       {/* Core Values Section */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+      <div className="grid grid-cols-1 gap-8 mb-16 md:grid-cols-3">
         {/* Sustainability Card */}
         <div className="bg-[#26B33B]/10 p-6 rounded-lg border border-[#26B33B]/20">
           <h3 className="text-[#26B33B] text-2xl font-bold mb-4">Sustainability</h3>
           <p className="text-white/80">
           EcoMitra is dedicated to promoting sustainable practices by facilitating the recycling and proper disposal of scrap materials. By encouraging the sale and recycling of scrap, EcoMitra significantly reduces waste and minimizes the environmental impact of discarded materials, contributing to a cleaner and greener environment.
-
           </p>
         </div>
 
@@ -38,7 +37,6 @@ const AboutUs = () => {
           <h3 className="text-[#26B33B] text-2xl font-bold mb-4">Innovation</h3>
           <p className="text-white/80">
           EcoMitra leverages innovative technologies to streamline the process of scrap collection and recycling. The application incorporates automated systems for cleaning and maintenance, treats wastewater on-site, and operates using renewable energy sources. These innovations not only improve operational efficiency but also reduce the overall environmental footprint of the recycling process.
-
           </p>
         </div>
 
@@ -46,13 +44,14 @@ const AboutUs = () => {
         <div className="bg-[#26B33B]/10 p-6 rounded-lg border border-[#26B33B]/20">
           <h3 className="text-[#26B33B] text-2xl font-bold mb-4">Community</h3>
           <p className="text-white/80">
-          EcoMitra actively engages with local communities to raise awareness about the importance of recycling and sustainable practices. The application provides educational resources and outreach programs to empower communities to embrace eco-friendly habits. Additionally, EcoMitra collaborates with various organizations and institutions to develop and implement sustainable solutions for waste management, fostering a sense of community involvement and responsibility.</p>
+          EcoMitra actively engages with local communities to raise awareness about the importance of recycling and sustainable practices. The application provides educational resources and outreach programs to empower communities to embrace eco-friendly habits. Additionally, EcoMitra collaborates with various organizations and institutions to develop and implement sustainable solutions for waste management, fostering a sense of community involvement and responsibility.
+          </p>
         </div>
       </div>
 
       {/* Description Section */}
       <div className="bg-[#26B33B]/10 p-8 rounded-lg border border-[#26B33B]/20 mb-16">
-        <p className="text-white/80 text-lg leading-relaxed">
+        <p className="text-lg leading-relaxed text-white/80">
           Eco Mitra is a digital platform dedicated to connecting individuals, scrap merchants, 
           and large-scale industries for efficient{' '}
           <span className="text-[#26B33B] font-semibold">scrap management</span>. 
@@ -67,7 +66,7 @@ const AboutUs = () => {
       </div>
 
       {/* Vision, Mission, Goals Section */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
         {/* Vision */}
         <div className="space-y-4">
           <button className="bg-[#26B33B] text-white px-6 py-2 rounded-lg font-semibold w-full md:w-auto">

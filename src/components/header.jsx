@@ -32,16 +32,15 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 w-full bg-transparent text-white py-5 px-6 lg:px-16 flex justify-between items-center z-50 transition-transform ${
-        isScrolled ? "-translate-y-full" : ""
-      }`}
+        isScrolled ? "-translate-y-full" : ""}`}
     >
       {/* Logo */}
-      <Link to="/" className="transform transition-transform hover:rotate-12">
+      <Link to="/" className="transition-transform transform hover:rotate-12">
         <img src={logo} alt="Logo" className="w-12 h-16" />
       </Link>
 
       {/* Desktop Navigation */}
-      <nav className="hidden lg:flex space-x-8">
+      <nav className="hidden space-x-8 lg:flex">
         {["HOME", "SERVICES", "BLOGS"].map((item) => (
           <button
             key={item}

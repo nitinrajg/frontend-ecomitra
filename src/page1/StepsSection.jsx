@@ -43,10 +43,10 @@ const steps = [
 const StepsSection = () => {
   return (
     <section className="bg-[#1C211B] text-white px-6 lg:px-20 pt-24 pb-24 flex flex-col items-center">
-      <div className="w-full max-w-5xl flex flex-col md:flex-row items-center justify-between gap-8 mb-16">
+      <div className="flex flex-col gap-8 justify-between items-center mb-16 w-full max-w-5xl md:flex-row">
         {/* Left Text Section */}
-        <div className="md:w-2/3 mb-4">
-          <h2 className="text-3xl mt-10 md:text-4xl font-bold">Ecomitra’s</h2>
+        <div className="mb-4 md:w-2/3">
+          <h2 className="mt-10 text-3xl font-bold md:text-4xl">Ecomitra’s</h2>
           <div className="mt-2">
             <h2 className="text-[#26B33B] text-3xl md:text-4xl font-bold relative inline-block">
               Sell Your Scrap
@@ -69,7 +69,7 @@ const StepsSection = () => {
         </div>
 
         {/* Right Image */}
-        <div className="md:w-1/3 flex justify-center">
+        <div className="flex justify-center md:w-1/3">
           <img
             src={clover}
             alt="Clover"
@@ -79,7 +79,7 @@ const StepsSection = () => {
       </div>
 
       {/* Steps Container */}
-      <div className="w-full max-w-5xl space-y-16">
+      <div className="space-y-16 w-full max-w-5xl">
         {steps.map((step, index) => (
           <motion.div
             key={index}
@@ -93,12 +93,12 @@ const StepsSection = () => {
           >
             <div className="flex-1 text-center md:text-left">
               <h3 className="text-[#26B33B] text-2xl font-bold">{step.title}</h3>
-              <p className="text-gray-300 font-semibold text-base">{step.subtitle}</p>
+              <p className="text-base font-semibold text-gray-300">{step.subtitle}</p>
               <div className="border-b border-[#26B33B] w-20 my-2 mx-auto md:mx-0"></div>
-              <p className="text-gray-300 text-base">{step.description}</p>
+              <p className="text-base text-gray-300">{step.description}</p>
             </div>
             <div className="flex-1">
-              <img src={step.image} alt={step.subtitle} className="rounded-xl w-full" />
+              <img src={step.image} alt={step.subtitle} className="w-full rounded-xl" />
             </div>
           </motion.div>
         ))}

@@ -37,16 +37,16 @@ const StepsSection2 = () => {
   return (
     <section className="bg-[#1C211B] text-white px-6 lg:px-20 pt-24 pb-24 flex flex-col items-center">
       {/* Header Section */}
-      <div className="w-full max-w-5xl flex flex-col md:flex-row items-center justify-between gap-8 mb-16">
+      <div className="flex flex-col gap-8 justify-between items-center mb-16 w-full max-w-5xl md:flex-row">
         {/* Left Text Section */}
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="md:w-2/3 mb-4"
+          className="mb-4 md:w-2/3"
         >
-          <h2 className="text-3xl mt-10 md:text-4xl font-bold">
+          <h2 className="mt-10 text-3xl font-bold md:text-4xl">
             Ecomitra’s Business:
           </h2>
           <div className="mt-2">
@@ -55,7 +55,7 @@ const StepsSection2 = () => {
               <span className="block h-[1px] bg-white w-full mt-3"></span>
             </h2>
           </div>
-          <p className="text-gray-300 mt-4 text-base">
+          <p className="mt-4 text-base text-gray-300">
             Ecomitra’s business service connects industries with a network of
             scrap merchants, enabling efficient, transparent recycling and
             waste management. By facilitating the recycling of scrap materials,
@@ -75,7 +75,7 @@ const StepsSection2 = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="md:w-1/3 flex justify-center"
+          className="flex justify-center md:w-1/3"
         >
           <img
             src={clover}
@@ -86,7 +86,7 @@ const StepsSection2 = () => {
       </div>
 
       {/* Steps Section */}
-      <div className="w-full max-w-5xl space-y-16">
+      <div className="space-y-16 w-full max-w-5xl">
         {steps.map((step, index) => {
           const isEven = index % 2 === 0;
           const ref = useRef(null);
@@ -107,17 +107,17 @@ const StepsSection2 = () => {
                 <h3 className="text-[#26B33B] text-2xl font-bold">
                   STEP {index + 1}
                 </h3>
-                <p className="text-gray-300 font-semibold text-base">
+                <p className="text-base font-semibold text-gray-300">
                   {step.title}
                 </p>
                 <div className="border-b border-[#26B33B] w-20 my-2"></div>
-                <p className="text-gray-300 text-base">{step.description}</p>
+                <p className="text-base text-gray-300">{step.description}</p>
               </div>
               <div className="flex-1">
                 <img
                   src={step.image}
                   alt={`Step ${index + 1}`}
-                  className="rounded-xl w-full"
+                  className="w-full rounded-xl"
                 />
               </div>
             </motion.div>

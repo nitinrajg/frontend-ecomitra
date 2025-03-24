@@ -11,7 +11,6 @@ import Page1 from "./page1/page1header";
 import Page2Header from "./page2/page2Header";
 import Page3Header from "./page3/page3header";
 import PreRegistration from "./PreRegistration/PreRegistration";
-import Blogs from './components/Blogs';
 
 const AppContent = () => {
   const location = useLocation();
@@ -41,7 +40,6 @@ const AppContent = () => {
         <Route path="/eco-life" element={<Page3Header />} />
         <Route path="/pre-registration" element={<PreRegistration />} />
         <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/blogs" element={<Blogs />} />
       </Routes>
       <Footer />
     </div>
