@@ -25,10 +25,10 @@ const Footer = () => {
             ecomitrasolutions07@gmail.com
           </a>
           <p className="mt-4 mb-4">
-            Malla Reddy Engineering College, <br />
-            Maisammaguda, Dhulapally, Kompally, <br />
-            Secunderabad, Hyderabad, Telangana <br />
-            500100
+            H. No 9-110/77/2, <br />
+            Gayatri Nagar, Boduppal, <br />
+            Hyderabad <br />
+            500039
           </p>
         </div>
 
