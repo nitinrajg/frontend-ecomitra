@@ -17,7 +17,7 @@ const PreRegistration = () => {
             <FaEnvelope className="text-xl" /> ecomitrasolutions07@gmail.com
           </p>
           <p className="flex gap-2 justify-end items-center">
-            <FaPhone className="text-xl" /> 79999 01514
+            <FaPhone className="text-xl" /> 79899 01514
           </p>
           <p className="flex gap-2 justify-end items-center">
             <FaPhone className="text-xl" /> 96767 13970
