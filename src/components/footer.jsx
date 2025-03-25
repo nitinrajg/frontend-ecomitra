@@ -27,8 +27,7 @@ const Footer = () => {
           <p className="mt-4 mb-4">
             H. No 9-110/77/2, <br />
             Gayatri Nagar, Boduppal, <br />
-            Hyderabad <br />
-            500039
+            Hyderabad - 500039
           </p>
         </div>
 
