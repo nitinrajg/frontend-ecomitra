@@ -17,10 +17,10 @@ const PreRegistration = () => {
             <FaEnvelope className="text-xl" /> ecomitrasolutions07@gmail.com
           </p>
           <p className="flex gap-2 justify-end items-center">
-            <FaPhone className="text-xl" /> 79899 01514
+            <FaPhone className="text-xl" /> <a href="tel:7989901514" className="hover:underline">79899 01514</a>
           </p>
           <p className="flex gap-2 justify-end items-center">
-            <FaPhone className="text-xl" /> 96767 13970
+            <FaPhone className="text-xl" /> <a href="tel:8978674545" className="hover:underline">89786 74545</a>
           </p>
 
           {/* Social Media Icons */}

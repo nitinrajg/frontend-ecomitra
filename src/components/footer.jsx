@@ -17,7 +17,7 @@ const Footer = () => {
         {/* Left Section */}
         <div className="w-full md:w-1/3">
           <img src={footerLogo} alt="Eco-mitra" className="w-16 h-16 mb-4" />
-          <p className="text-lg mb-2">+91 7989901514</p>
+          <p className="text-lg mb-2">+91 8978674545</p>
           <a
             href="mailto:ecomitrasolutions07@gmail.com"
             className="border-b border-white/40 hover:border-[#26B33B] transition duration-300"
