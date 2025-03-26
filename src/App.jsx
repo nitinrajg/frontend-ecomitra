@@ -2,6 +2,7 @@ import { Route, BrowserRouter as Router, Routes, useLocation } from "react-route
 import AboutUs from "./components/AboutUs";
 import Footer from "./components/footer";
 import Header from "./components/header";
+import WhatsAppButton from "./components/WhatsAppButton";
 import AppLaunch from "./homepage/applaunch";
 import HeroSection from "./homepage/hero";
 import Merchants from "./homepage/merchants";
@@ -19,6 +20,7 @@ const AppContent = () => {
   return (
     <div className={isPreRegistration ? "" : "bg-[#1C211B] text-white"}>
       <Header />
+      <WhatsAppButton />
       <Routes>
         {/* Home Page */}
         <Route
