@@ -17,7 +17,7 @@ const Footer = () => {
         {/* Left Section */}
         <div className="w-full md:w-1/3">
           <img src={footerLogo} alt="Eco-mitra" className="w-16 h-16 mb-4" />
-          <p className="text-lg mb-2">+91 8978674545</p>
+          <p><a href="tel:+918978674545" className="text-lg mb-2 inline-block border-b border-white/40 hover:border-[#26B33B] transition duration-300">+91 8978674545</a></p>
           <a
             href="mailto:ecomitrasolutions07@gmail.com"
             className="border-b border-white/40 hover:border-[#26B33B] transition duration-300"
