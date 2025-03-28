@@ -1,7 +1,7 @@
 {
     "rewrites": [
       {
-        "source": "/(.*)",
+        "source": "https://ecomitraindia.in/:path*",
         "destination": "/index.html"
       }
     ]
