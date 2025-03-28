@@ -1,11 +1,4 @@
 {
-  "redirects": [
-    {
-      "source": "https://www.ecomitraindia.in/:path*",
-      "destination": "https://ecomitraindia.in/:path*",
-      "permanent": true
-    }
-  ],
   "rewrites": [
     {
       "source": "/(.*)",
