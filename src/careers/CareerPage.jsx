@@ -36,7 +36,7 @@ const CareerPage = () => {
       <div className="min-h-[60vh] md:min-h-screen flex flex-col md:flex-row items-center bg-black text-white px-4 sm:px-8 md:px-16 lg:px-32">
         {/* Left Section - Text Content */}
         <div className="flex-1 w-full md:w-auto pt-20 pb-6 md:py-0">
-          <h1 className="text-4xl md:text-5xl font-bold text-green-400 mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-[#26B33B] mb-6">
             Careers at Eco Mitra
           </h1>
           <p className="text-lg max-w-2xl mb-6">
@@ -49,8 +49,14 @@ const CareerPage = () => {
             If you're passionate about sustainability, technology, and making a
             real impact, Ecomitra is the place for you!
           </p>
-          <Link to="#job-listings">
-            <button className="bg-green-500 text-white px-6 py-3 rounded-full text-lg hover:bg-green-700 transition">
+          <Link 
+            to="#job-listings" 
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('job-listings').scrollIntoView({ behavior: 'smooth' });
+            }}
+          >
+            <button className="bg-[#26B33B] text-white px-6 py-3 rounded-full text-lg hover:bg-[#1f8f2f] transition">
               Open positions
             </button>
           </Link>
@@ -81,10 +87,10 @@ const CareerPage = () => {
 
               {/* Job Type Badges */}
               <div className="flex gap-2 mb-4">
-                <span className="bg-green-500 text-sm px-3 py-1 rounded-full">
+                <span className="bg-[#26B33B] text-sm px-3 py-1 rounded-full">
                   Intern
                 </span>
-                <span className="bg-green-500 text-sm px-3 py-1 rounded-full">
+                <span className="bg-[#26B33B] text-sm px-3 py-1 rounded-full">
                   Full-time
                 </span>
               </div>
@@ -94,7 +100,7 @@ const CareerPage = () => {
 
               {/* Apply Button */}
               <Link to="/careers/apply">
-                <button className="bg-green-500 text-black px-5 py-2 rounded-full text-lg font-semibold hover:bg-green-600 transition flex items-center gap-2">
+                <button className="bg-[#26B33B] text-white px-5 py-2 rounded-full text-lg font-semibold hover:bg-[#1f8f2f] transition flex items-center gap-2">
                   Apply now <span>➡</span>
                 </button>
               </Link>
