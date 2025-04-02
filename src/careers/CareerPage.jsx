@@ -32,8 +32,8 @@ const CareerPage = () => {
   ];
 
   return (
-    <div className="overflow-x-hidden w-full">
-      <div className="min-h-[60vh] md:min-h-screen flex flex-col md:flex-row items-center bg-black text-white px-4 sm:px-8 md:px-16 lg:px-32">
+    <div className="w-full overflow-hidden">
+      <div className="min-h-[60vh] md:min-h-screen flex flex-col md:flex-row items-center bg-[#1C211B] text-white px-4 sm:px-6 md:px-12 lg:px-24">
         {/* Left Section - Text Content */}
         <div className="flex-1 w-full md:w-auto pt-20 pb-6 md:py-0">
           <h1 className="text-4xl md:text-5xl font-bold text-[#26B33B] mb-6">
@@ -67,7 +67,7 @@ const CareerPage = () => {
           <img
             src={cuate}
             alt="Career at Eco Mitra"
-            className="max-w-full md:max-w-md"
+            className="max-w-full md:max-w-md h-auto" // Added h-auto
           />
         </div>
       </div>
@@ -75,13 +75,13 @@ const CareerPage = () => {
       {/* Job Listings Section */}
       <div
         id="job-listings"
-        className="px-4 sm:px-6 md:px-20 lg:px-40 py-16 bg-black -mt-1" // Added -mt-1 to remove gap
+        className="px-4 sm:px-6 md:px-12 lg:px-24 py-16 bg-[#1C211B]"
       >
         <h2 className="text-4xl text-white font-bold mb-10">Open Positions</h2>
 
         <div className="flex flex-col gap-6">
           {jobs.map((job, index) => (
-            <div key={index} className="bg-green-900 p-6 rounded-2xl text-white">
+            <div key={index} className="bg-green-900 p-6 rounded-2xl text-white overflow-hidden">
               {/* Job Title */}
               <h3 className="text-2xl font-bold mb-2">{job.title}</h3>
 
