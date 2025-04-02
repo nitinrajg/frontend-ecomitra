@@ -66,9 +66,30 @@ const Header = () => {
         </Link>
       </nav>
 
+      {/* Mobile Menu Button */}
+      <button
+        className="lg:hidden focus:outline-none z-[9999] relative"
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <svg
+          className="w-8 h-8 text-[#26B33B]"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"}
+          />
+        </svg>
+      </button>
+
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="fixed top-16 left-0 w-full bg-[#111111]/80 backdrop-blur-md flex flex-col items-center space-y-6 py-6 lg:hidden">
+        <div className="fixed top-16 left-0 w-full bg-[#111111]/80 backdrop-blur-md flex flex-col items-center space-y-6 py-6 lg:hidden z-[9998]">
           {["HOME", "SERVICES", "CAREERS"].map((item) => (
             <button
               key={item}

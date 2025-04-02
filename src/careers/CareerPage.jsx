@@ -33,9 +33,9 @@ const CareerPage = () => {
 
   return (
     <div className="overflow-x-hidden w-full">
-      <div className="min-h-screen flex flex-col md:flex-row items-center bg-black text-white px-4 sm:px-8 md:px-16 lg:px-32">
+      <div className="min-h-[60vh] md:min-h-screen flex flex-col md:flex-row items-center bg-black text-white px-4 sm:px-8 md:px-16 lg:px-32">
         {/* Left Section - Text Content */}
-        <div className="flex-1 w-full md:w-auto py-24 md:py-0">
+        <div className="flex-1 w-full md:w-auto pt-20 pb-6 md:py-0">
           <h1 className="text-4xl md:text-5xl font-bold text-green-400 mb-6">
             Careers at Eco Mitra
           </h1>
@@ -69,7 +69,7 @@ const CareerPage = () => {
       {/* Job Listings Section */}
       <div
         id="job-listings"
-        className="px-4 sm:px-6 md:px-20 lg:px-40 py-16 bg-black"
+        className="px-4 sm:px-6 md:px-20 lg:px-40 py-16 bg-black -mt-1" // Added -mt-1 to remove gap
       >
         <h2 className="text-4xl text-white font-bold mb-10">Open Positions</h2>
 
