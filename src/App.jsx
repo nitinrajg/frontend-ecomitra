@@ -20,35 +20,37 @@ const AppContent = () => {
   const isPreRegistration = location.pathname === '/pre-registration';
 
   return (
-    <div className={isPreRegistration ? "" : "bg-[#1C211B] text-white"}>
+    <div className={`${isPreRegistration ? "" : "bg-[#1C211B] text-white"} overflow-x-hidden w-full max-w-[100vw]`}>
       <Header />
       <WhatsAppButton />
-      <Routes>
-        {/* Home Page */}
-        <Route
-          path="/"
-          element={
-            <>
-              <HeroSection/>
-              <Services />
-              <Merchants />
-              <WhyChooseUs />
-              <AppLaunch />
-            </>
-          }
-        />
+      <div className="w-full overflow-x-hidden max-w-[100vw]">
+        <Routes>
+          {/* Home Page */}
+          <Route
+            path="/"
+            element={
+              <>
+                <HeroSection/>
+                <Services />
+                <Merchants />
+                <WhyChooseUs />
+                <AppLaunch />
+              </>
+            }
+          />
 
-        {/* Individual Pages */}
-        <Route path="/scrap-selling" element={<Page1 />} />
-        <Route path="/business" element={<Page2Header />} />
-        <Route path="/eco-life" element={<Page3Header />} />
-        <Route path="/pre-registration" element={<PreRegistration />} />
-        <Route path="/about-us" element={<AboutUs />} />
-        
-        {/* Career Routes */}
-        <Route path="/careers" element={<CareerPage />} />
-        <Route path="/careers/apply" element={<ApplyPage />} />
-      </Routes>
+          {/* Individual Pages */}
+          <Route path="/scrap-selling" element={<Page1 />} />
+          <Route path="/business" element={<Page2Header />} />
+          <Route path="/eco-life" element={<Page3Header />} />
+          <Route path="/pre-registration" element={<PreRegistration />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          
+          {/* Career Routes */}
+          <Route path="/careers" element={<CareerPage />} />
+          <Route path="/careers/apply" element={<ApplyPage />} />
+        </Routes>
+      </div>
       <Footer />
     </div>
   );
