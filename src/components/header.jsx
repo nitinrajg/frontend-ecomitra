@@ -41,15 +41,15 @@ const Header = () => {
 
       {/* Desktop Navigation */}
       <nav className="hidden space-x-8 lg:flex">
-        {["HOME", "SERVICES", "BLOGS"].map((item) => (
+        {["HOME", "SERVICES", "CAREERS"].map((item) => (
           <button
             key={item}
             className="text-sm font-normal px-6 py-2 rounded-full transition-all border-2 border-transparent hover:border-[#26B33B] hover:bg-transparent hover:text-[#26B33B]"
             onClick={() => {
               if (item === "SERVICES") {
                 scrollToSection("services");
-              } else if (item === "BLOGS") {
-                window.location.href = "/";
+              } else if (item === "CAREERS") {
+                window.location.href = "/careers";
               } else {
                 window.location.href = "/";
               }
@@ -66,31 +66,10 @@ const Header = () => {
         </Link>
       </nav>
 
-      {/* Mobile Menu Button */}
-      <button
-        className="lg:hidden focus:outline-none"
-        onClick={() => setIsOpen(!isOpen)}
-      >
-        <svg
-          className="w-8 h-8 text-[#26B33B]"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"}
-          />
-        </svg>
-      </button>
-
       {/* Mobile Menu */}
       {isOpen && (
         <div className="fixed top-16 left-0 w-full bg-[#111111]/80 backdrop-blur-md flex flex-col items-center space-y-6 py-6 lg:hidden">
-          {["HOME", "SERVICES", "BLOGS"].map((item) => (
+          {["HOME", "SERVICES", "CAREERS"].map((item) => (
             <button
               key={item}
               className="text-sm font-normal w-full text-center px-4 py-2 transition-all border-b border-transparent hover:border-[#26B33B] hover:text-[#26B33B]"
@@ -98,8 +77,8 @@ const Header = () => {
                 setIsOpen(false);
                 if (item === "SERVICES") {
                   scrollToSection("services");
-                } else if (item === "BLOGS") {
-                  window.location.href = "/";
+                } else if (item === "CAREERS") {
+                  window.location.href = "/careers";
                 } else {
                   window.location.href = "/";
                 }

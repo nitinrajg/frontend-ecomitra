@@ -12,6 +12,8 @@ import Page1 from "./page1/page1header";
 import Page2Header from "./page2/page2Header";
 import Page3Header from "./page3/page3header";
 import PreRegistration from "./PreRegistration/PreRegistration";
+import CareerPage from "./careers/CareerPage";
+import ApplyPage from "./careers/ApplyPage";
 
 const AppContent = () => {
   const location = useLocation();
@@ -42,6 +44,10 @@ const AppContent = () => {
         <Route path="/eco-life" element={<Page3Header />} />
         <Route path="/pre-registration" element={<PreRegistration />} />
         <Route path="/about-us" element={<AboutUs />} />
+        
+        {/* Career Routes */}
+        <Route path="/careers" element={<CareerPage />} />
+        <Route path="/careers/apply" element={<ApplyPage />} />
       </Routes>
       <Footer />
     </div>
