@@ -1,27 +1,15 @@
-import express from 'express';
-import { sendConfirmationEmail } from './emailService.js';
+import { sendCareerApplicationEmail, sendConfirmationEmail } from './emailService.js';
 
-const router = express.Router();
+export const handleNocoDBWebhook = async (body) => {
+  const { email, name, role } = body;
 
-router.post('/nocodb-webhook', async (req, res) => {
-  try {
-    const { email, name, role } = req.body;
-    
-    if (!email || !name) {
-      return res.status(400).json({ error: 'Missing required fields' });
-    }
-
-    if (role) {
-      await sendCareerApplicationEmail(email, name, role);
-    } else {
-      await sendConfirmationEmail(email, name);
-    }
-    
-    res.status(200).json({ success: true });
-  } catch (error) {
-    console.error('Webhook error:', error);
-    res.status(500).json({ error: 'Internal server error' });
+  if (!email || !name) {
+    throw new Error("Missing required fields");
   }
-});
 
-export default router;
+  if (role) {
+    await sendCareerApplicationEmail(email, name, role);
+  } else {
+    await sendConfirmationEmail(email, name);
+  }
+};
