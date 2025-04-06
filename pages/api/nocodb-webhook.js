@@ -1,8 +1,16 @@
 import { handleNocoDBWebhook } from "@/src/services/webhookHandler";
 
 export default async function handler(req, res) {
+  if (req.method === "OPTIONS") {
+    return res.status(200).end();
+  }
+  
   if (req.method !== "POST") {
-    return res.status(405).json({ message: "Method not allowed" });
+    res.setHeader('Allow', ['POST']);
+    return res.status(405).json({ 
+      message: `Method ${req.method} not allowed`,
+      allowedMethods: ['POST'] 
+    });
   }
 
   try {
