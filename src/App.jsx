@@ -1,11 +1,7 @@
 import { Route, BrowserRouter as Router, Routes, useLocation } from "react-router-dom";
-import ApplyPage from "./careers/ApplyPage";
-import CareerPage from "./careers/CareerPage";
 import AboutUs from "./components/AboutUs";
 import Footer from "./components/footer";
 import Header from "./components/header";
-import Login from "./components/Login";
-import Signup from "./components/Signup";
 import WhatsAppButton from "./components/WhatsAppButton";
 import AppLaunch from "./homepage/applaunch";
 import HeroSection from "./homepage/hero";
@@ -16,6 +12,8 @@ import Page1 from "./page1/page1header";
 import Page2Header from "./page2/page2Header";
 import Page3Header from "./page3/page3header";
 import PreRegistration from "./PreRegistration/PreRegistration";
+import CareerPage from "./careers/CareerPage";
+import ApplyPage from "./careers/ApplyPage";
 
 const AppContent = () => {
   const location = useLocation();
@@ -47,8 +45,6 @@ const AppContent = () => {
           <Route path="/eco-life" element={<Page3Header />} />
           <Route path="/pre-registration" element={<PreRegistration />} />
           <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
           
           {/* Career Routes */}
           <Route path="/careers" element={<CareerPage />} />
